@@ -18,21 +18,21 @@ class About extends Me {
     return { ...he, ...digs } as Stefan;
   }
 
-  get workplace(): Record<string, string> {
+  get workplace(): DopePlace {
     return {
       company: 'Play.co',
       position: 'Software Engineer',
       status: 'Onboarding',
-    };
+    } as DopePlace;
   }
 
-  get task(): string {
+  get task(): Task {
     const chance = Math.random();
 
-    if (chance < 0.4) return 'coding';
-    if (chance < 0.7) return 'hunting monsters';
-    if (chance < 0.9) return 'dreaming';
-    return 'drinking tea';
+    if (chance < 0.4) return Tasks.Coding.pop();
+    if (chance < 0.7) return Tasks.Monsters.hunt();
+    if (chance < 0.9) return Tasks.Wonder.dream();
+    return Tasks.Tea.drink();
   }
 }
 
