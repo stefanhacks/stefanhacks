@@ -27,7 +27,7 @@ export class About extends Me {
   }
 
   get task(): string {
-    const chance: Math.random();
+    const chance = Math.random();
 
     if (chance < 0.4) return 'coding';
     if (chance < 0.7) return 'hunting monsters';
