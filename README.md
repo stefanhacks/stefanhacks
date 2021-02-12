@@ -1,7 +1,7 @@
 ```javascript
-export type Stefan = GameDev & TeaHead & DungeonMaster;
+type Stefan = GameDev & TeaHead & DungeonMaster;
 
-export class About extends Me {
+class About extends Me {
   get profile(): Stefan {
     const he: GameDev = {
       mood: '🐙',
