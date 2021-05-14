@@ -22,7 +22,7 @@ class About extends Me {
     return {
       company: 'Play.co',
       position: 'Software Engineer',
-      status: 'Onboarding',
+      status: 'Developing Cool Games',
     } as DopePlace;
   }
 
