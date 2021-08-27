@@ -6,7 +6,7 @@ class About extends Me {
     const they: GameDev = {
       mood: '🐙',
       props: ['structure', 'reliance'],
-      codes: [TypeScript, CSharp, Python, Lua, sh],
+      codes: [TypeScript, CSharp, Python, sh],
       engines: [Unity, Godot, CocosCreator, Defold],
     };
 
