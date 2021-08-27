@@ -3,7 +3,7 @@ type Stefan = GameDev & TeaHead & DungeonMaster;
 
 class About extends Me {
   get profile(): Stefan {
-    const he: GameDev = {
+    const they: GameDev = {
       mood: '🐙',
       props: ['structure', 'reliance'],
       codes: [TypeScript, CSharp, Python, Lua, sh],
@@ -15,7 +15,7 @@ class About extends Me {
       rolls: [PNP.DnD, PNP.Pathfinder],
     };
 
-    return { ...he, ...digs } as Stefan;
+    return { ...they, ...dig } as Stefan;
   }
 
   get workplace(): DopePlace {
