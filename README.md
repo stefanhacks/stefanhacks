@@ -10,7 +10,7 @@ class About extends Me {
       engines: [Unity, Godot, CocosCreator, Defold],
     };
 
-    const digs: TeaHead & DungeonMaster = {
+    const dig: TeaHead & DungeonMaster = {
       drinks: [Leaf.GyokuroAsahi, Blend.AppleBlackberry],
       rolls: [PNP.DnD, PNP.Pathfinder],
     };
