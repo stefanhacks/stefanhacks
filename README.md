@@ -4,14 +4,14 @@ type Stefan = GameDev & TeaHead & DungeonMaster;
 class About extends Me {
   get profile(): Stefan {
     const they: GameDev = {
-      mood: '🐙',
+      mood: '🐺',
       props: ['structure', 'reliance'],
-      codes: [TypeScript, CSharp, Python, sh],
-      engines: [Unity, Godot, CocosCreator, Defold],
+      codes: [TypeScript, CSharp, Python, Bash],
+      engines: [Unity, Godot, CocosCreator, PixyJS],
     };
 
     const dig: TeaHead & DungeonMaster = {
-      drinks: [Leaf.GyokuroAsahi, Blend.AppleBlackberry],
+      drinks: [Leaf.GyokuroAsahi, Blend.AppleTemptation],
       rolls: [PNP.DnD, PNP.Pathfinder],
     };
 
@@ -19,18 +19,15 @@ class About extends Me {
   }
 
   get workplace(): DopePlace {
-    return {
-      company: 'Play.co',
-      position: 'Software Engineer',
-      status: 'Developing Cool Games',
-    } as DopePlace;
+    // Safe cast since undefined is an actual DopePlace to be at.
+    return undefined as DopePlace;
   }
 
   get task(): Task {
     const chance = Math.random();
 
-    if (chance < 0.4) return Tasks.Coding.pop();
-    if (chance < 0.7) return Tasks.Monsters.hunt();
+    if (chance < 0.2) return Tasks.Coding.studying();
+    if (chance < 0.7) return Tasks.Music.studying();
     if (chance < 0.9) return Tasks.Wonder.dream();
     return Tasks.Tea.drink();
   }
