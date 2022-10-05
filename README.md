@@ -19,8 +19,8 @@ class About extends Me {
   }
 
   get workplace(): DopePlace {
-    // Safe cast since undefined is an actual DopePlace to be at.
-    return undefined as DopePlace;
+    // Safe cast, null is an actual DopePlace to be at.
+    return null as DopePlace;
   }
 
   get task(): Task {
