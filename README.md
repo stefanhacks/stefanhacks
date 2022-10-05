@@ -5,7 +5,7 @@ class About extends Me {
   get profile(): Stefan {
     const they: GameDev = {
       mood: '🍕',
-      props:['structure', 'reliance'],
+      props: ['structure', 'reliance'],
       codes: [TypeScript, CSharp, Python, Bash],
       engines: [Unity, Godot, CocosCreator, PixyJS],
     };
