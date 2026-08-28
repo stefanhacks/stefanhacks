@@ -27,7 +27,7 @@ class About extends Me {
 
     if (chance < 0.5) return Tasks.Coding.working();
     if (chance < 0.7) return Tasks.Working.out();
-    if (chance < 0.9) return Tasks.Brain.studying();
+    if (chance < 0.9) return Tasks.Brain.building();
     return Tasks.Tea.ceremony();
   }
 }
