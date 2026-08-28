@@ -1,5 +1,5 @@
 ```javascript
-type Stefan = GameDev & TeaHead & DungeonMaster;
+type Stefan = DungeonEngineer & 茶人 & Musician;
 
 class About extends Me {
   get profile(): Stefan {
